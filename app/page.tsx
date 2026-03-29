@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Shield, Zap, Users, HardDrive, ArrowRight, Globe, Play } from 'lucide-react';
 import { usePeerStore } from '@/store/usePeerStore';
 import { motion, type Variants } from 'motion/react';
+import AdBanner from '@/components/AdBanner';
 import { dict } from '@/lib/locales';
 
 export default function LandingPage() {
