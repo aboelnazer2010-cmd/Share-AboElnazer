@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { Shield, Zap, Users, HardDrive, ArrowRight, Globe, Play } from 'lucide-react';
 import { usePeerStore } from '@/store/usePeerStore';
 import { motion, type Variants } from 'motion/react';
-import AdBanner from '@/components/AdBanner';
 import { dict } from '@/lib/locales';
+import AdBanner from '@/components/AdBanner'; // <-- استدعاء الإعلان
 
 export default function LandingPage() {
   const { language, setLanguage } = usePeerStore();
@@ -74,7 +74,7 @@ export default function LandingPage() {
         </div>
       </motion.nav>
 
-      <main className="pt-36 pb-24 px-6 relative z-10">
+      <main className="pt-36 pb-12 px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
@@ -195,24 +195,16 @@ export default function LandingPage() {
         </div>
       </main>
 
-      {/* 👇👇 بداية منطقة الإعلان التي سنضيفها 👇👇 */}
+      {/* منطقة الإعلان */}
       <div className="max-w-6xl mx-auto px-6 relative z-10 my-8">
         <div className="bg-stone-900/30 border border-stone-800/50 rounded-2xl p-4">
           <p className="text-center text-xs text-stone-600 mb-2 uppercase tracking-widest font-mono">إعلان</p>
-          
-          {/* ضع رقم الـ Slot الخاص بك هنا بدلاً من الأصفار */}
-          <AdBanner dataAdSlot="8015209706" /> 
+          <AdBanner dataAdSlot="8015209706" />
         </div>
       </div>
-      {/* 👆👆 نهاية منطقة الإعلان 👆👆 */}
 
       {/* Features */}
-      <section id="features" className="py-28 relative z-10">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-
-      {/* Features */}
-      <section id="features" className="py-28 relative z-10">
+      <section id="features" className="py-24 relative z-10">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight mb-4 text-stone-100">{t.featuresTitle}</h2>
