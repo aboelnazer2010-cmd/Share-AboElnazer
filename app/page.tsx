@@ -195,6 +195,22 @@ export default function LandingPage() {
         </div>
       </main>
 
+      {/* 👇👇 بداية منطقة الإعلان التي سنضيفها 👇👇 */}
+      <div className="max-w-6xl mx-auto px-6 relative z-10 my-8">
+        <div className="bg-stone-900/30 border border-stone-800/50 rounded-2xl p-4">
+          <p className="text-center text-xs text-stone-600 mb-2 uppercase tracking-widest font-mono">إعلان</p>
+          
+          {/* ضع رقم الـ Slot الخاص بك هنا بدلاً من الأصفار */}
+          <AdBanner dataAdSlot="8015209706" /> 
+        </div>
+      </div>
+      {/* 👆👆 نهاية منطقة الإعلان 👆👆 */}
+
+      {/* Features */}
+      <section id="features" className="py-28 relative z-10">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+
       {/* Features */}
       <section id="features" className="py-28 relative z-10">
         <div className="max-w-6xl mx-auto px-6">
