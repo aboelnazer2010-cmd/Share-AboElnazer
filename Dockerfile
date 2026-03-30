@@ -38,6 +38,7 @@ COPY --from=builder /app/next.config.ts ./next.config.ts
 COPY --from=builder /app/lib ./lib
 COPY --from=builder /app/store ./store
 COPY --from=builder /app/tsconfig.json ./tsconfig.json
+COPY --from=builder /app/public ./public
 
 USER nextjs
 
